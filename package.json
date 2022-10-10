@@ -1,0 +1,25 @@
+{
+  "name": "intro2sd-template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "bundle exec jekyll s --watch --incremental --future -V -P 4444",
+    "build": "bundle exec jekyll build --future -V",
+    "deploy": "npm run build && gh-pages -d _site"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ULL-ESIT-DMSI/intro2sd-template.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ULL-ESIT-DMSI/intro2sd-template/issues"
+  },
+  "homepage": "https://github.com/ULL-ESIT-DMSI/intro2sd-template#readme",
+  "dependencies": {
+    "gh-pages": "^4.0.0"
+  }
+}
