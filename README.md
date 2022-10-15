@@ -34,6 +34,6 @@ Subimos un archivo HTML que sirva como raiz de nuestro sitio.
 ![image](https://user-images.githubusercontent.com/9874071/195961434-982f639e-ef70-4831-be1a-81065361d1e0.png)
 ![image](https://user-images.githubusercontent.com/9874071/195961449-858fc1fe-b163-4813-ae32-0dcd922498f7.png)
 # Paso 3
-Siga el paso 2 de [Despliegue en GH Pages]()
+Siga el paso 2 de [Despliegue en GH Pages](#paso-2)
 # Paso 4
 Listo, visite el sitio en https://alu0101229942.github.io/.
