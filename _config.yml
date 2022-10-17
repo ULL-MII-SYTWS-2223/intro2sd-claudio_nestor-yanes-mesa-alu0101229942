@@ -7,15 +7,15 @@
 
 remote_theme             : "mmistakes/minimal-mistakes@4.24.0"
 
-minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin    : "neon" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
 locale                   : "en-US"
 title                    : "Introducción al Desarrollo de Sistemas"
 title_separator          : "-"
-subtitle                 : "A Jekyll theme"
-name                     : &name "Michael Rose" # &name is a YAML anchor which can be *referenced later
-description              : &description "A flexible Jekyll theme for your blog or site with a minimalist aesthetic."
+subtitle                 : "A Jekyll site"
+name                     : &name "Claudio Yanes" # &name is a YAML anchor which can be *referenced later
+description              : &description "A Jekyll site with minimal-mistakes theme."
 url                      : https://ull-mii-sytws-2223.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "/intro2sd-claudio_nestor-yanes-mesa-alu0101229942/" # the subpath of your site, e.g. "/blog"
 repository               : "mmistakes/minimal-mistakes"
