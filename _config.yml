@@ -10,20 +10,20 @@ remote_theme             : "mmistakes/minimal-mistakes@4.24.0"
 minimal_mistakes_skin    : "neon" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
-locale                   : "en-US"
+locale                   : "es-ES"
 title                    : "Introducción al Desarrollo de Sistemas"
 title_separator          : "-"
 subtitle                 : "A Jekyll site"
 name                     : &name "Claudio Yanes" # &name is a YAML anchor which can be *referenced later
 description              : &description "A Jekyll site with minimal-mistakes theme."
 url                      : https://ull-mii-sytws-2223.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
-baseurl                  : "/intro2sd-claudio_nestor-yanes-mesa-alu0101229942/" # the subpath of your site, e.g. "/blog"
+baseurl                  : "/intro2sd-claudio_nestor-yanes-mesa-alu0101229942" # the subpath of your site, e.g. "/blog"
 repository               : "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
 # breadcrumbs            : false # true, false (default)
-words_per_minute         : 200
+words_per_minute         : 169
 comments:
   provider               : "false" # false (default), "disqus", "discourse", "facebook", "staticman_v2", "staticman", "utterances", "giscus", "custom"
   disqus:
@@ -52,8 +52,8 @@ reCaptcha:
 atom_feed:
   path                   : # blank (default) uses feed.xml
 
-search                   : true # true, false (default)
-search_full_content      : true # true, false (default)
+search                   : false # true, false (default)
+search_full_content      : false # true, false (default)
 search_provider          : algolia # lunr (default), algolia
 algolia:
   application_id         : QB6HVGBSBA # YOUR_APPLICATION_ID
@@ -64,7 +64,7 @@ algolia:
     - _posts/2017-11-28-post-exclude-search.md
 
 # SEO Related
-google_site_verification : "UQj93ERU9zgECodaaXgVpkjrFn9UrDMEzVamacSoQ8Y" # Replace this with your ID, or delete
+google_site_verification : "" # Replace this with your ID, or delete
 bing_site_verification   :
 naver_site_verification  :
 yandex_site_verification :
@@ -72,11 +72,11 @@ baidu_site_verification  :
 
 # Social Sharing
 twitter:
-  username               : &twitter "mmistakes"
-facebook:
-  username               : &facebook "michaelrose"
-  app_id                 :
-  publisher              :
+  username               : &twitter "claudio4"
+#facebook:
+#  username               : &facebook "michaelrose"
+#  app_id                 :
+#  publisher              :
 og_image                 : "/assets/images/site-logo.png" # Open Graph/Twitter default site image
 # For specifying social profiles, used in _includes/seo.html
 # - https://developers.google.com/structured-data/customize/social-profiles
@@ -89,7 +89,7 @@ social:
 
 # Analytics
 analytics:
-  provider               : "google-universal" # false (default), "google", "google-universal", "google-gtag", "custom"
+  provider               : false # false (default), "google", "google-universal", "google-gtag", "custom"
   google:
     tracking_id          : "UA-2011187-3" # Replace this with your ID, or delete
     anonymize_ip         : true
@@ -98,22 +98,19 @@ analytics:
 # Site Author
 author:
   name             : *name # *name is a YAML reference pointing to the &anchor earlier
-  avatar           : "/assets/images/michael-rose.jpg"
+  avatar           : "https://www.claudio4.com/assets/profile.jpg"
   bio              : "A Student"
   location         : "Islas Canarias"
   links:
-    - label: "Made Mistakes"
+    - label: "Website"
       icon: "fas fa-fw fa-link"
-      url: "https://mademistakes.com"
+      url: "https://claudio4.com"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/mmistakes"
+      url: "https://twitter.com/claudio4sv"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/mmistakes"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      url: "https://instagram.com/mmistakes"
+      url: "https://github.com/claudio4"
 
 
 # Site Footer
@@ -121,13 +118,10 @@ footer:
   links:
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/mmistakes"
+      url: "https://twitter.com/claudio4sv"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/mmistakes"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      url: "https://instagram.com/mmistakes"
+      url: "https://github.com/claudio4"
 
 
 # Reading Files
@@ -271,7 +265,7 @@ sass:
 permalink: /:categories/:title/
 # paginate: 5 # amount of posts to show
 # paginate_path: /page:num/
-timezone: America/New_York # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone: Atlantic/Canary # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 
 # Plugins (previously gems:)
