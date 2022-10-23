@@ -13,16 +13,27 @@ Editar el fichero `_posts/2022-10-01-informe.md` para añadir el resumen del lib
 ##Paso 4
 Listo, la página esta dispnible en https://ull-mii-sytws-2223.github.io/intro2sd-claudio_nestor-yanes-mesa-alu0101229942/post%20formats/informe/.
 # Despligue Netlify
-El despligue a Netlify no es posible ya que require una cuenta premiun, que no viene incluida en el Github student pack. Es posible que se pueda circunventar esta limimitación usando la herramienta de CLI de Netlify y GH Actions, pero se ha considerado muy complejo para esta prática.
+El despligue a Netlify rquiere que el repo sea publico.
+Los paso para añadir el proyecto son los siguientes:
 
-A continuación se muestran los pasos a tomar hasta encontrarse con el *paywall*.
+Selecionar el importar proyecto de Git.
 ![image](https://user-images.githubusercontent.com/9874071/195960649-2cfd0b59-275f-44d4-8837-d8163194e32a.png)
+
+Seleccionar Github.
 ![image](https://user-images.githubusercontent.com/9874071/195960671-f80ac306-539a-44d5-9572-47ff066cb0ec.png)
+
+Añadir otro organización.
 ![image](https://user-images.githubusercontent.com/9874071/195960686-6bd70f45-c961-4a14-94cd-6d943ab03893.png)
+
+Seleccionar la organización de clase.
 ![image](https://user-images.githubusercontent.com/9874071/195960699-9e4f1adb-3e9b-452d-93aa-a11d29b2ac46.png)
-![image](https://user-images.githubusercontent.com/9874071/195960729-8468a188-5696-4c9a-b050-8f9e6a51bc85.png) 
-![image](https://user-images.githubusercontent.com/9874071/195960784-c60e0e9c-717b-4759-8624-feaa441cf0fa.png)
-![image](https://user-images.githubusercontent.com/9874071/195960852-3d285373-e979-4b33-b86e-ca78a9c0e0a0.png)
+Solo dar permisos al repostiro deaseado (opcinal pero recomendado).
+![image](https://user-images.githubusercontent.com/9874071/195960729-8468a188-5696-4c9a-b050-8f9e6a51bc85.png)
+Configurar los parametros tal y como se ven en la imagen.
+![image](https://user-images.githubusercontent.com/9874071/197416584-e74502c4-ae7b-4fdb-ae46-c267f5fdf39b.png)
+
+Listo, ahora solo queda esperar y el sitio estara dispnible en Netlify. URL de ejemplo: https://intro2sd-cy.netlify.app/
+
 
 # Despliegue de la ágina personal con Github
 ## Paso 1
