@@ -17,20 +17,26 @@ El despligue a Netlify rquiere que el repo sea publico.
 Los paso para añadir el proyecto son los siguientes:
 
 Selecionar el importar proyecto de Git.
+
 ![image](https://user-images.githubusercontent.com/9874071/195960649-2cfd0b59-275f-44d4-8837-d8163194e32a.png)
 
 Seleccionar Github.
+
 ![image](https://user-images.githubusercontent.com/9874071/195960671-f80ac306-539a-44d5-9572-47ff066cb0ec.png)
 
 Añadir otro organización.
+
 ![image](https://user-images.githubusercontent.com/9874071/195960686-6bd70f45-c961-4a14-94cd-6d943ab03893.png)
 
 Seleccionar la organización de clase.
+
 ![image](https://user-images.githubusercontent.com/9874071/195960699-9e4f1adb-3e9b-452d-93aa-a11d29b2ac46.png)
 Solo dar permisos al repostiro deaseado (opcinal pero recomendado).
+
 ![image](https://user-images.githubusercontent.com/9874071/195960729-8468a188-5696-4c9a-b050-8f9e6a51bc85.png)
 Configurar los parametros tal y como se ven en la imagen.
-![image](https://user-images.githubusercontent.com/9874071/197416584-e74502c4-ae7b-4fdb-ae46-c267f5fdf39b.png)
+
+![image](https://user-images.githubusercontent.com/9874071/197417219-27f1bc04-3bcf-4ab6-a0bb-6ecb55d58772.png)
 
 Listo, ahora solo queda esperar y el sitio estara dispnible en Netlify. URL de ejemplo: https://intro2sd-cy.netlify.app/
 
