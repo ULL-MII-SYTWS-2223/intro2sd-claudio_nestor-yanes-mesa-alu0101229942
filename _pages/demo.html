@@ -1,0 +1,43 @@
+---
+title: Demo
+permalink: /demo/
+---
+<style>
+    .card-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        width: 100%;
+    }
+    .card {
+        max-width: 200px;
+        border: 1px solid;
+        border-radius: 16px;
+        padding: 16px;
+        margin: 16px;
+    }
+    .card h3 {
+        font-size: 2em;
+        margin-top: 8px;
+    }
+    .card img {
+        display: block;
+        position: relative;
+        margin: auto;
+        width: 80%;
+        border-radius: 100%;
+        aspect-ratio: 1 / 1;
+    }
+</style>
+
+<div class="card-container">
+    {% for e in site.portfolio %}
+        <div class="card">
+            {% if e.header.image %}
+            <img src="{{site.baseurl}}{{e.header.image}}" alt="" />
+            {% endif %}
+            <h3>{{e.title}}</h3>
+            {{e.excerpt}}
+        </div>
+    {% endfor %}
+</div>
