@@ -25,7 +25,7 @@ masthead_title           : # overrides the website title displayed in the masthe
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 169
 comments:
-  provider               : "giscus" # false (default), "disqus", "discourse", "facebook", "staticman_v2", "staticman", "utterances", "giscus", "custom"
+  provider               : "utterances" # false (default), "disqus", "discourse", "facebook", "staticman_v2", "staticman", "utterances", "giscus", "custom"
   disqus:
     shortname            :
   discourse:
@@ -36,8 +36,10 @@ comments:
     num_posts            : # 5 (default)
     colorscheme          : # "light" (default), "dark"
   utterances:
-    theme                : # "github-light" (default), "github-dark"
-    issue_term           : # "pathname" (default)
+    theme                : "github-dark" # "github-light" (default), "github-dark"
+    issue_term           : "pathname" # "pathname" (default)
+    label                : "Comments"
+    repo                 : "ULL-MII-SYTWS-2223/intro2sd-claudio_nestor-yanes-mesa-alu0101229942"
   giscus:
     repo_id              : "R_kgDOILpceA" # Shown during giscus setup at https://giscus.app
     category_name        : "General" # Full text name of the category
