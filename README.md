@@ -54,3 +54,28 @@ Subimos un archivo HTML que sirva como raiz de nuestro sitio.
 Siga el paso 2 de [Despliegue en GH Pages](#paso-2)
 # Paso 4
 Listo, visite el sitio en https://alu0101229942.github.io/.
+
+# Crear una colección
+Lo primero es modifical el archivo `_config.yml` y editar la entrada de `` para añadir las siguientes lineas:
+```yaml
+micoleccion:
+    output: true
+    permalink: /:collection/:path/
+```
+Luego tenemos que crear una carpeta llamada `_micoleccion` en la raiz del proyecto.
+
+Añadiremos entradas a nuestra colleción creando archivos en dicha carpeta, uno por entrada. Para seguir la convencion del tema, deberemos añadir un frontmatter a cada archivo con un  titulo en la clave `title` y un resumen en la clave `excerpt`, aunque no es obligtorio.
+
+Podremos acceder a nuestra colección desde cualquier lugar usando `site.micoleccion`. Por ejemplo podemos crear tarjetas de la colleción con el siguiente códgio
+```liquid
+    {% for e in site.portfolio %}
+        <div class="card">
+            {% if e.header.image %}
+            <img src="{{site.baseurl}}{{e.header.image}}" alt="" />
+            {% endif %}
+            <h3>{{e.title}}</h3>
+            {{e.excerpt}}
+        </div>
+    {% endfor %}
+```
+Notese que en este ejempo `e.header.image` y `e.title` son propiedades definidas en el frontmatter de las entradas de la colleción.
