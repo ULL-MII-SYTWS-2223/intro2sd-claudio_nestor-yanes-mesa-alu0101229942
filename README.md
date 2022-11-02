@@ -56,7 +56,7 @@ Siga el paso 2 de [Despliegue en GH Pages](#paso-2)
 Listo, visite el sitio en https://alu0101229942.github.io/.
 
 # Crear una colección
-Lo primero es modifical el archivo `_config.yml` y editar la entrada de `` para añadir las siguientes lineas:
+Lo primero es modifical el archivo `_config.yml` y editar la entrada de `collections` para añadir las siguientes lineas:
 ```yaml
 micoleccion:
     output: true
@@ -87,4 +87,79 @@ Podemos acceder a ifnormación que tengamos guardada en archivos de datos en for
     <li>{{spell.name}}</li>
     {% endfor %}
 </ul>
+```
+# Personalizando la configuración
+## Configuración basica
+Lo primero es modifcar el nombre del autor, el titulo del sitio, el lenguaje, el repositorio y sobre todo la *url* y *baseurl*. Esto se cambia en las primeras lineas de la configuración.
+En mi caso lo he dejado así:
+```yaml
+locale                   : "es-ES"
+title                    : "Introducción al Desarrollo de Sistemas"
+title_separator          : "-"
+subtitle                 : "A Jekyll site"
+name                     : &name "Claudio Yanes"
+description              : &description "A Jekyll site with minimal-mistakes theme."
+url                      : https://ull-mii-sytws-2223.github.io
+baseurl                  : "/intro2sd-claudio_nestor-yanes-mesa-alu0101229942" 
+repository               : "ULL-MII-SYTWS-2223/intro2sd-claudio_nestor-yanes-mesa-alu0101229942"
+```
+## Tema
+Podemos cambiar la *skin* del tema con la propiedad `minimal_mistakes_skin`.
+Acepta los sisguientes valores:
+* air
+* aqua
+* contrast
+* dark
+* dirt
+* neon
+* mint
+* plum
+* sunrise
+En mi caso he usado el tema neon asi que mi configuación luce así:
+```yaml
+minimal_mistakes_skin    : "neon" 
+```
+## Activar comentarios
+Para esot tenemos que ir a la sección `comments`de la configración. Ahí elegiremos utterances como proveedor y configuraremos los ajustes relativos a este.
+```yaml
+comments:
+  provider               : "utterances" # false (default), "disqus", "discourse", "facebook", "staticman_v2", "staticman", "utterances", "giscus", "custom"
+  # snipped
+  utterances:
+    theme                : "github-dark" # "github-light" (default), "github-dark"
+    issue_term           : "pathname" # "pathname" (default)
+    label                : "Comments"
+```
+Recordar que es importante darle acceso al repositorio a la apliación de utterances en Github y que el campo `repository` que se encuenra al principio de la configuración apunte a nuestro repositorio.
+## Información del autor
+en el apartado `twitter`, `author` y `footer` podemos cambiar los enlaces a redes sociales que aparecen en la página, así como información relacionada con nosotros.
+```yaml
+twitter:
+  username               : &twitter "claudio4"
+
+author:
+  name             : *name # *name is a YAML reference pointing to the &anchor earlier
+  avatar           : "https://www.claudio4.com/assets/profile.jpg"
+  bio              : "A Student"
+  location         : "Islas Canarias"
+  links:
+    - label: "Website"
+      icon: "fas fa-fw fa-link"
+      url: "https://claudio4.com"
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      url: "https://twitter.com/claudio4sv"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/claudio4"
+
+
+footer:
+  links:
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      url: "https://twitter.com/claudio4sv"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/claudio4"
 ```
