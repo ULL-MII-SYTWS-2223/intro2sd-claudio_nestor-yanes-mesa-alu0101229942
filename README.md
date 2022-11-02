@@ -163,3 +163,41 @@ footer:
       icon: "fab fa-fw fa-github"
       url: "https://github.com/claudio4"
 ```
+## Página 404 personalizada
+Los contenidos del archivo `_pages/404.md` seran los que se muestren en el caso de no encontrarse la página solicitada por el usuario. En mi caso se ha editado para cargar imagenes aaleatorias publicadas en [r/ProgrammerHumor](https://www.reddit.com/r/ProgrammerHumor). Esto se hace con el siguiente código
+```javascript
+async function getPost() {
+  // Obtener un post random
+  const post = await fetch("https://www.reddit.com/r/ProgrammerHumor/random.json")
+    .then( resp => resp.json())
+
+  // Si el post no tiene imagen devolvemos null
+  const postEntry = post.find(e => e?.data?.children?.[0]?.data?.url_overridden_by_dest)
+  if (!postEntry) {
+    return null
+  }
+  const postData = postEntry.data.children[0].data
+
+  return {image: postData.url_overridden_by_dest, url: postData.url}
+}
+async function loadMeme() {
+  let post = null
+
+  // pedimos posts hasta que obtengamos uno con imagen.
+  while (!post) {
+    post = await getPost()
+  }
+  
+  // Preparamos el html a insertar
+  let a = document.createElement('a')
+  a.href = post.url
+  a.rel = "noreferrer noopener"
+  a.target = "_blank"
+  let img = document.createElement('img')
+  // Si la imagen es invalida y falla al cargar reiniciamos la operación.
+  img.addEventListener('error', loadMeme)
+  img.src = post.image
+  a.appendChild(img)
+  document.getElementById('meme-container').replaceChildren(a)
+}
+```
