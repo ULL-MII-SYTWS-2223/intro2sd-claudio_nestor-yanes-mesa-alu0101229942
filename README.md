@@ -79,3 +79,12 @@ Podremos acceder a nuestra colección desde cualquier lugar usando `site.micolec
     {% endfor %}
 ```
 Notese que en este ejempo `e.header.image` y `e.title` son propiedades definidas en el frontmatter de las entradas de la colleción.
+# Acceder a datos de un archivo
+Podemos acceder a ifnormación que tengamos guardada en archivos de datos en formato JSON y YANL, entre otros. Para ello solo tenemos que guardarlos en el directorio `_data` y ya podremos acceder a su infromación usando `site.data.my-nombre-de-archivo`. lA información la podemos trbajar con liquid de la misma forma que hacemos con las colleciones, por ejemplo podemos interar sobre una lista de la siguiente forma:
+```liquid
+<ul>
+    {% for spell in site.data.spells-phb.spell %}
+    <li>{{spell.name}}</li>
+    {% endfor %}
+</ul>
+```
